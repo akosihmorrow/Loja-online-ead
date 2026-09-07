@@ -7,7 +7,7 @@ function calcularTotal (itens){
     for (let i = 0; i < itens.length; i++){
         total += itens[i].preco
     }
-    
+
     // aplica desconto de fidelidade
     // antes de retornar o valor final
 
