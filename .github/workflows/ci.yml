@@ -1,0 +1,15 @@
+name: CI
+
+on:
+oull_request:
+branches: [ main ]
+
+jobs:
+testes:
+runs-on: ubuntu-latest
+step:
+- uses: actionc/checkout@v4
+- name: Instalar depenências
+run: npm install
+- name: Rodas os testes
+run: npm test
