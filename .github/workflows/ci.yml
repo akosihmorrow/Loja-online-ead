@@ -11,8 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
       - name: Instalar dependências
         run: npm install
+        working-directory: ./
 
       - name: Rodar os testes
         run: npm test
+        working-directory: ./
+        # Ajuste feito em 21/09
