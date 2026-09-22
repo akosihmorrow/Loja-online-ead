@@ -7,9 +7,9 @@ branches: [ main ]
 jobs:
 testes:
 runs-on: ubuntu-latest
-step:
+steps:
 - uses: actionc/checkout@v4
 - name: Instalar depenências
 run: npm install
-- name: Rodas os testes
+- name: Rodar os testes
 run: npm test
